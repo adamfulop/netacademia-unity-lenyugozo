@@ -35,7 +35,7 @@ public class EnemyCarSpawner : MonoBehaviour {
     }
 
     public void ResetEnemyCars() {
-        var enemyCars = FindObjectsOfType<EnemyCar>();
+        var enemyCars = GameObject.FindGameObjectsWithTag("EnemyCar");
         foreach (var enemyCar in enemyCars) {
             LeanPool.Despawn(enemyCar);
         }

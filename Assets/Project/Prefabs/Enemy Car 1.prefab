@@ -39,10 +39,11 @@ GameObject:
   - component: {fileID: 65910676450698630}
   - component: {fileID: 114188510653801682}
   - component: {fileID: 114052743245184898}
+  - component: {fileID: 114888978580457370}
   - component: {fileID: 114419453240351382}
   m_Layer: 0
   m_Name: Enemy Car 1
-  m_TagString: Untagged
+  m_TagString: EnemyCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -460,3 +461,15 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114888978580457370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1117060678006418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91058290cc524d5f910685ac32f7e8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyThreshold: -10

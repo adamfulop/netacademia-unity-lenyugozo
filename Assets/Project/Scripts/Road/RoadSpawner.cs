@@ -35,12 +35,12 @@ public class RoadSpawner : MonoBehaviour {
     }
 
     public void ResetRoad() {
-        var roadSegments = FindObjectsOfType<RoadSegment>();
+        var roadSegments = GameObject.FindGameObjectsWithTag("RoadSegment");
         foreach (var roadSegment in roadSegments) {
             LeanPool.Despawn(roadSegment);
-            LastRoadSegment = null;
         }
         
+        LastRoadSegment = null;
         for (var i = 0; i < 30; i++) {
             SpawnRoadSegment();
         }

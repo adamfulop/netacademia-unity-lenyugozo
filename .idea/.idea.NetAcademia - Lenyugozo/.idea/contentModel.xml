@@ -16,14 +16,25 @@
         </e>
         <e p="Project" t="Include">
           <e p="Scripts" t="Include">
-            <e p="Car.cs" t="Include" />
-            <e p="CarMove.cs" t="Include" />
-            <e p="EnemyCar.cs" t="Include" />
-            <e p="EnemyCarMove.cs" t="Include" />
-            <e p="EnemyCarSpawner.cs" t="Include" />
+            <e p="AutoDestroy.cs" t="Include" />
+            <e p="Car" t="Include">
+              <e p="Car.cs" t="Include" />
+              <e p="CarMove.cs" t="Include" />
+            </e>
+            <e p="CarCollide.cs" t="Include" />
+            <e p="EnemyCar" t="Include">
+              <e p="EnemyCarMove.cs" t="Include" />
+              <e p="EnemyCarSpawner.cs" t="Include" />
+            </e>
             <e p="GameController.cs" t="Include" />
-            <e p="RoadSegment.cs" t="Include" />
-            <e p="RoadSpawner.cs" t="Include" />
+            <e p="Road" t="Include">
+              <e p="RoadSpawner.cs" t="Include" />
+            </e>
+            <e p="SideTile" t="Include">
+              <e p="Side.cs" t="Include" />
+              <e p="SideTile.cs" t="Include" />
+              <e p="SideTileSpawner.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Third Party" t="Include">
