@@ -1,12 +1,12 @@
 ﻿using Lean.Pool;
 using UnityEngine;
 
-public class RoadSegment : MonoBehaviour {
+public class EnemyCar : MonoBehaviour {
     private Car _car;
     private GameController _gameController;
     
     private const float DestroyThreshold = -10;
-    
+
     private void Awake() {
         _car = FindObjectOfType<Car>();
         _gameController = FindObjectOfType<GameController>();
@@ -17,7 +17,7 @@ public class RoadSegment : MonoBehaviour {
             LeanPool.Despawn(gameObject);
         }
     }
-    
+
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Car")) {
             _gameController.ResetGame();
