@@ -15,6 +15,9 @@
           </e>
         </e>
         <e p="Project" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="Komika.txt" t="Include" />
+          </e>
           <e p="Scripts" t="Include">
             <e p="AutoDestroy.cs" t="Include" />
             <e p="Car" t="Include">
@@ -34,6 +37,9 @@
               <e p="Side.cs" t="Include" />
               <e p="SideTile.cs" t="Include" />
               <e p="SideTileSpawner.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="UIScore.cs" t="Include" />
             </e>
           </e>
         </e>
